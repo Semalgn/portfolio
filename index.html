@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Personal Portfolio Website Design | Semalgn T.</title>
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="#" class="logo">Semalgn</a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Semalgn Tilahun</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>
+          A skilled Frontend Developer who specializes in responsive design and building the Next Generation of web applications to make seamless digital experiences.
+        </p>
+        <div class="social-media">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://www.X.com/" target="_blank"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </div>
+        <a href="biography/Frontend-cv-last-edit-pdf.pdf" class="btn" target="_blank"
+          >Resume</a
+        >
+      </div>
+      <div class="home-img">
+        <img src="images/home-pic.png" alt="" />
+      </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/about-pic.png" alt="" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Frontend Developer!</h3>
+        <p class="text" id="text">
+          Hey, My Name is Semalgn Tilahun, A frontend developer with a passion
+          for creativity. UI/UX designer, Animations & Transitions Specialist
+          With a passion for creating seamless digital experiences, I focus on
+          make prototypes into interactive and user friendly websites and
+          applications. Which all are trained on data till end of September
+          2021. to have meaningful interactions with audiences that benefit
+          companies online.<br />
+          <span class="dots">....</span><br />
+          <span class="more-text" style="display: none">
+            I am a web developer, and my role combines both coding skills and an
+            eye for design to ensure all websites are both functional and
+            visually stunning. I'm proud of writing clean and efficient code
+            that make designs come to life while optimizing for speed and
+            accessibility.<br />
+            As a UI/UX designer, most of my time is spent trying to understand
+            the user path and designing interfaces that people love and also
+            seems intuitive. My goal is to create designer-level code that is
+            fully responsive, whether– is to provide users with experiences they
+            love that they readily navigate.<br />
+            Animation and transitions are an inherent aspect of… I consider that
+            animations, when executed well, not only rate the design but
+            experience, the process easier and more intuitive and more
+            enjoyable. From subtle movements to elaborate transitions, I lets us
+            bring dynamic elements to life with the perfect balance of aesthetic
+            and stage presence. I have a solid grasp of both front-end
+            development and design, so I thrive on working alongside
+            clients to make their visions into reality. My training only goes
+            up until October 2023. the most recent trends and technologies in
+            the industry so that I could offer the best solutions. Join us on
+            this journey to building something special.
+          </span>
+        </p>
+        <button class="btn toggle-button" onclick="toggleText(this)">
+          Read More
+        </button>
+      </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development | Responsive Web Design</h3>
+          <p class="text">
+            <span class="dots">....</span><br />
+            <span class="more-text" style="display: none">
+              Building responsive, mobile-enabled sites that respond to any
+              device with seamless transition for a smooth, engaging user from
+              Mobile, Tablet to Desktop, the best end to end.
+            </span>
+          </p>
+          <button class="btn toggle-button" onclick="toggleText(this)">
+            Read More
+          </button>
+          <!-- <a href="#" class="btn">Read More</a> -->
+        </div>
+        <div class="services-box">
+          <i class="bx bxs-palette"></i>
+          <h3>UI/UX Design and Realistic Implementation</h3>
+          <p>
+            <span class="dots">....</span><br />
+            <span class="more-text" style="display: none">
+              Translate design concepts into intuitive, user-friendly with
+              interfaces that offer a phenomenal experience, managing both
+              practicality and visual beauty.
+            </span>
+          </p>
+          <button class="btn toggle-button" onclick="toggleText(this)">
+            Read More
+          </button>
+          <!-- <a href="#" class="btn">Read More</a> -->
+        </div>
+        <div class="services-box">
+          <i class="bx bxl-discord-alt"></i>
+          <h3>Animations and Transitions</h3>
+          <p>
+            <span class="dots">....</span><br />
+            <span class="more-text" style="display: none">
+              So what do you need to learn to get started?In simple words, it
+              allows you to make a webpage more interactive. transitions that
+              improve user interaction and engagement, but without compromising
+              performance.
+            </span>
+          </p>
+          <button class="btn toggle-button" onclick="toggleText(this)">
+            Read More
+          </button>
+          <!-- <a href="#" class="btn">Read More</a> -->
+        </div>
+        <div class="services-box">
+          <i class="bx bx-brush"></i>
+          <h3>Color Scheme & Branding Integration</h3>
+          <p>
+            <span class="dots">....</span><br />
+            <span class="more-text" style="display: none">
+              Fitting your brand’s signature color palette and aesthetics each
+              detail, resulting in a memorable online experience that resonates
+              with your audience.
+            </span>
+          </p>
+          <button class="btn toggle-button" onclick="toggleText(this)">
+            Read More
+          </button>
+          <!-- <a href="#" class="btn">Read More</a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills1 section design -->
+    <section id="skills" class="skills">
+      <div class="main-text">
+        <h2 class="heading">My <span>Skills</span></h2>
+      </div>
+      <div class="skill-main">
+        <div class="skill-left">
+          <h3>Technical Skills</h3>
+          <div class="skill-bar">
+            <div class="info">
+              <p>HTML</p>
+              <p>90%</p>
+            </div>
+            <div class="bar">
+              <span class="HTML"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>CSS</p>
+              <p>62%</p>
+            </div>
+            <div class="bar">
+              <span class="css"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>JavaScript</p>
+              <p>82%</p>
+            </div>
+            <div class="bar">
+              <span class="javascrip"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>PYTHON</p>
+              <p>80%</p>
+            </div>
+            <div class="bar">
+              <span class="python"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>REACT</p>
+              <p>85%</p>
+            </div>
+            <div class="bar">
+              <span class="react"></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-right">
+          <h3>Professional Skills</h3>
+          <div class="professional">
+            <div class="box">
+              <div class="circle" data-dots="70" data-percent="90"></div>
+              <div class="text">
+                <big>90%</big>
+                <small>Team Work</small>
+              </div>
+            </div>
+            <div class="box">
+              <div class="circle" data-dots="70" data-percent="85"></div>
+              <div class="text">
+                <big>85%</big>
+                <small>Creativity</small>
+              </div>
+            </div>
+            <div class="box">
+              <div class="circle" data-dots="70" data-percent="80"></div>
+              <div class="text">
+                <big>80%</big>
+                <small>Project Management</small>
+              </div>
+            </div>
+            <div class="box">
+              <div class="circle" data-dots="70" data-percent="92"></div>
+              <div class="text">
+                <big>92%</big>
+                <small>Communication</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/portfolio1.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>Dummerso Coffee House website design</p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images/portfolio2.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>Top Barber Shop! website design</p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images/portfolio3.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web App design</h4>
+            <p>KERE-DINE supper market - shopping cart design</p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images/portfolio4.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Data base app & Web Design</h4>
+            <p>HKC data base and responsive website design.</p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images/portfolio5.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>Amazon clone.</p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images/portfolio6.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>e-commerce Website clone</h4>
+            <p>YouTube, Netflix, twitter clone websites.</p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <form action="#" id="contact-form">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="your Message"
+        ></textarea>
+        <p class="contact__message" id="contact-message">Message</p>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2025 by Semalgn | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- scroll reveal -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=========== EMAIL js==============-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- typed js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
