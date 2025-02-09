@@ -61,9 +61,9 @@ ScrollReveal().reveal(".home-content p, .about-content, .skill-right", {
 const typed = new Typed(".multiple-text", {
   strings: [
     "Frontend Developer",
-    "Web Designer",
+    "SEO Optimization",
     "UI/UX Designer",
-    "Freelancer",
+    "Graphics Designer",
   ],
   typeSpeed: 75,
   backSpeed: 75,
